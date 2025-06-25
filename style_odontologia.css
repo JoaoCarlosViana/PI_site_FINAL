@@ -1003,12 +1003,317 @@ h1{
     background-color: #71d1f0;
 }
 
-/* ========== MEDIA QUERIES ========== */
+.secao8 #container1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-/* ========== TABLET (768px e abaixo) ========== */
+#caixa1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa1 img{
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+    
+    padding: 0;
+    
+    border-radius: 10px;
+}
+
+#caixa1 h2{
+    position: relative;
+    top: -20px;
+    width: 250px;
+    
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    
+    color: var(--cor-complementar);
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    background-color: #00a1d8;
+}
+
+#caixa2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: start;
+}
+
+#caixa3{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: start;
+}
+
+#caixa2 article{
+    color: var(--cor-complementar);
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    
+    background-color: #4fc4eb;
+}
+
+#caixa3 article{
+    color: var(--cor-complementar);
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    
+    background-color: #4fc4eb;
+}
+
+#caixa2 article p{
+    margin-bottom: 20px;
+}
+
+#caixa3 article p{
+    margin-bottom: 20px;
+}
+
+.secao9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    
+    background: linear-gradient(to top, var(--cor-terciaria), var(--cor-fundo));
+}
+
+.secao9 h2{
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    
+    color: var(--cor-complementar);
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    background-color: #00eeffa6;
+}
+
+.secao9 img{
+    width: 20%;
+    min-width: 180px;
+    
+    border-radius: 10px;
+}
+
+.secao9 div{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+    margin-bottom: 50px;
+}
+
+.secao9  #caixa4{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    padding: 20px;
+}
+.secao9  ul{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    
+    padding: 20px;
+
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    
+    color: var(--cor-complementar);
+}
+
+.secao10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background: linear-gradient(to bottom, var(--cor-terciaria), var(--cor-fundo));
+    padding: 30px;
+}
+
+.secao10 .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.secao10 #card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    padding: 20px;
+    
+}
+
+.secao10 #card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    padding: 20px;
+    
+}
+.secao10 #card1 #img_card1{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+}
+.secao10 #card2 #img_card2{
+    width: 510px;
+    max-width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+}
+
+.secao10 h2{
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    
+    color: var(--cor-complementar);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    background-color: #00eeffa6;
+}
+
+.secao10 h3{
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secao10 ul{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    
+    padding: 20px;
+
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    border-radius: 10px;
+    
+    background-color: #00eeffa6;
+    
+    color: var(--cor-complementar);
+}
+
+.secao10 li{
+    margin-left: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 100px;
+    padding: 20px;
+
+    width: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--cor-terciaria);
+}
+
+footer p{
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    
+    color: var(--cor-complementar);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    
+    color: var(--cor-complementar);
+    padding-left: 25px;
+}
+
+/* ========== MEDIA QUERIES REFATORADAS ========== */
+
+/* TABLET - 768px e abaixo */
 @media screen and (max-width: 768px) {
     
-    /* HEADER RESPONSIVO */
+    /* HEADER */
     header {
         width: 95%;
         height: 70px;
@@ -1020,17 +1325,14 @@ h1{
         margin-top: 15px;
     }
     
-    /* Mostrar menu hambúrguer */
     .hamburger {
         display: flex;
     }
     
-    /* Esconder menu desktop */
     .nav-links {
         display: none;
     }
     
-    /* Mostrar menu mobile quando ativo */
     .menu-toggle:checked ~ .nav-links-mobile {
         display: flex;
         position: absolute;
@@ -1056,7 +1358,7 @@ h1{
         height: 40px;
     }
     
-    /* MAIN CONTENT */
+    /* MAIN */
     main {
         width: 95%;
     }
@@ -1127,11 +1429,41 @@ h1{
         height: 150px;
     }
     
-    .secao1 p, li {
+    .secao1 p, .secao1 li {
         font-size: 16px;
     }
     
-    /* SEÇÃO 3 - GRID RESPONSIVO */
+    /* CONTAINERS 3 e 4 */
+    .container3 #imgArticle3 {
+        position: static;
+        top: 0;
+        max-width: 90%;
+        min-width: 300px;
+    }
+    
+    .container4 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .container4 #imgArticle,
+    .container4 #imgArticle4 {
+        position: static;
+        left: 0;
+        bottom: 0;
+        max-width: 90%;
+        min-width: 280px;
+    }
+    
+    #imgArticle5 {
+        position: static;
+        top: 0;
+        left: 0;
+        max-width: 90%;
+        min-width: 280px;
+    }
+    
+    /* SEÇÃO 3 - GRID */
     .secao3 {
         grid-template-areas: 
         "caixa1"
@@ -1216,10 +1548,10 @@ h1{
     }
 }
 
-/* ========== MOBILE (480px e abaixo) ========== */
+/* MOBILE - 480px e abaixo */
 @media screen and (max-width: 480px) {
     
-    /* HEADER MOBILE */
+    /* HEADER */
     header {
         width: 100%;
         height: 60px;
@@ -1241,12 +1573,12 @@ h1{
         padding: 15px;
     }
     
-    /* MAIN MOBILE */
+    /* MAIN */
     main {
         width: 100%;
     }
     
-    /* BANNER MOBILE */
+    /* BANNER */
     .banner {
         padding: 30px 15px;
     }
@@ -1261,7 +1593,7 @@ h1{
         padding: 0 10px;
     }
     
-    /* CONTAINER1 MOBILE */
+    /* CONTAINER1 */
     .container1 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1282,7 +1614,7 @@ h1{
         line-height: 1.5;
     }
     
-    /* SEÇÃO 1 MOBILE */
+    /* SEÇÃO 1 */
     .secao1 {
         gap: 30px;
         padding: 15px;
@@ -1301,11 +1633,36 @@ h1{
         height: 120px;
     }
     
-    .secao1 p, li {
+    .secao1 p, .secao1 li {
         font-size: 14px;
     }
     
-    /* SEÇÃO 3 MOBILE */
+    /* CONTAINERS 3 e 4 */
+    .container3 img {
+        min-width: 200px;
+    }
+    
+    .container3 #imgArticle3 {
+        min-width: 250px;
+        padding: 15px;
+    }
+    
+    .container4 img {
+        min-width: 200px;
+    }
+    
+    .container4 #imgArticle,
+    .container4 #imgArticle4 {
+        min-width: 220px;
+        padding: 15px;
+    }
+    
+    #imgArticle5 {
+        min-width: 250px;
+        padding: 15px;
+    }
+    
+    /* SEÇÃO 3 */
     .secao3 {
         gap: 15px;
         padding: 15px;
@@ -1319,15 +1676,14 @@ h1{
     #container1 img, #container2 img, #container3 img, #container4 img {
         min-width: 200px;
         max-width: 90%;
-        padding: 10px;
     }
     
     #container5 img, #container6 img {
         min-width: 120px;
-        max-width: 60%;
+        max-width: 50%;
     }
     
-    /* SEÇÃO 4 MOBILE */
+    /* SEÇÃO 4 */
     .secao4 {
         padding: 15px;
     }
@@ -1348,29 +1704,43 @@ h1{
         max-width: 100px;
     }
     
+    .secao4 .img_card1,
+    .secao4 .img_card2 {
+        width: 300px;
+        min-width: 250px;
+    }
+    
     .secao4 .boxs {
         padding: 15px;
         padding-left: 25px;
     }
     
-    /* SEÇÃO 5 MOBILE */
+    /* SEÇÃO 5 */
+    .secao5 {
+        margin-top: 20px;
+    }
+    
     .secao5 h2 {
         font-size: 16px;
         padding: 15px;
         padding-top: 25px;
     }
     
-    /* SEÇÃO 6 MOBILE */
+    /* SEÇÃO 6 */
     .secao6 {
         gap: 30px;
         padding: 15px;
     }
     
     .secao6 h2 {
-        width: 250px;
+        width: 150px;
         font-size: 20px;
-        padding: 8px;
         margin-bottom: 30px;
+    }
+    
+    .secao6 h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
     
     .secao6 section {
@@ -1383,72 +1753,40 @@ h1{
     
     .box_02 h2 {
         font-size: 16px;
-        padding: 8px;
     }
     
     .box_02 ul {
-        font-size: 14px;
-        padding: 8px;
         padding-left: 15px;
+        font-size: 16px;
     }
     
-    /* SEÇÃO 7 MOBILE */
+    /* SEÇÃO 7 */
     .secao7 {
         padding: 15px;
+        gap: 50px;
     }
     
     .box_03 h2 {
         width: 80%;
         min-width: 180px;
-        font-size: 16px;
-        padding: 8px;
+        font-size: 18px;
         margin-bottom: 30px;
     }
     
     .box_03 img {
         min-width: 200px;
-        max-width: 80%;
     }
     
     .textos article {
         min-width: 250px;
-        height: auto;
-        padding: 12px;
         font-size: 14px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
-    /* CONTAINERS POSICIONADOS */
-    .container3 #imgArticle3 {
-        position: static;
-        top: 0;
-        max-width: 90%;
-        min-width: 280px;
-        margin-top: 20px;
-    }
-    
-    .container4 #imgArticle, .container4 #imgArticle4 {
-        position: static;
-        left: 0;
-        bottom: 0;
-        max-width: 90%;
-        min-width: 200px;
-        margin-top: 20px;
-    }
-    
-    #imgArticle5 {
-        position: static;
-        top: 0;
-        left: 0;
-        max-width: 90%;
-        min-width: 250px;
-        margin-top: 20px;
-    }
 }
 
-/* ========== MOBILE PEQUENO (320px e abaixo) ========== */
-@media screen and (max-width: 320px) {
+/* MOBILE PEQUENO - 360px e abaixo */
+@media screen and (max-width: 360px) {
     
     header img {
         width: 120px;
@@ -1471,17 +1809,22 @@ h1{
     }
     
     .secao1 .div1, .secao1 .div2, .secao1 .div3 {
-        min-width: 200px;
-        padding: 12px;
+        min-width: 220px;
     }
     
-    .secao1 p, li {
+    .secao1 p, .secao1 li {
         font-size: 13px;
     }
     
     #container1, #container2, #container3, #container4, #container5, #container6 {
-        padding: 15px;
         font-size: 13px;
+        padding: 15px;
+    }
+    
+    .secao4 .img_card1,
+    .secao4 .img_card2 {
+        width: 250px;
+        min-width: 200px;
     }
     
     .secao4 .cards h2 {
@@ -1490,21 +1833,16 @@ h1{
     }
     
     .secao6 h2 {
-        width: 200px;
+        width: 120px;
         font-size: 18px;
     }
     
     .box_03 h2 {
-        width: 90%;
-        min-width: 160px;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .textos article {
-        min-width: 200px;
+        min-width: 220px;
         font-size: 13px;
-        padding: 10px;
     }
 }
-
-    
