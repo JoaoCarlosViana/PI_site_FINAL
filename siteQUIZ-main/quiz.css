@@ -237,36 +237,6 @@ section{
     background-position: center;
 }
 
-button{
-  
-  text-decoration: none;
-  color: #090a0f;
-  font-size: 15px;
-    
-  background: linear-gradient(to bottom, #c3e9eb 0%, #bce1f8 100%);
-
-  width: 200px;
-  height: 80px;
-
-  margin-left: 150px;
-  margin-top: 25px;
-
-  border: none;
-  border-radius: 30px;  
-
-  transition:0.9s ease;
-}
-button:hover{
-  background: linear-gradient(to bottom, #bce1f8 0%, #c3e9eb 100%);
-    cursor: pointer;
-    transform: translatey(-27px);
-    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
-}
-a{
-  text-decoration: none;
-  color: #090a0f;
-}
-
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
