@@ -1,0 +1,495 @@
+/* CSS Responsivo para Mobile - Ânima Odontologia */
+
+/* Media Query para dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+    /* Ajustes gerais */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* Ajustes do cabeçalho e navegação */
+    header {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    header img {
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0 10px;
+    }
+
+    /* Esconder links de navegação desktop */
+    .nav-links {
+        display: none;
+    }
+
+    /* Exibir menu hambúrguer */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 100;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--cor-terciaria);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    /* Estilo para o menu mobile quando ativado */
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-complementar);
+        z-index: 99;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .menu-toggle:checked ~ .hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked ~ .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked ~ .hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-links-mobile li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links-mobile img {
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    /* Ajustes da seção hero */
+    .hero {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    /* Ajustes dos containers */
+    .container1 {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .container1 img {
+        max-width: 200px;
+    }
+
+    .container1 article {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .container1 article h2 {
+        font-size: 24px;
+    }
+
+    /* Ajustes da seção 1 */
+    .secao1 {
+        padding-top: 50px;
+    }
+
+    .secao1 #container2 .div1{
+        height: auto;
+    }
+
+    .secao1 #container2 li{
+        font-size: 16px;
+    }
+
+    .secao1 #container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .secao1 .div3{
+        left: 0;
+        bottom: 80px;
+        
+        max-width: 70%;
+        height: 300px;
+    }
+    
+    .secao1 #container2 div{
+        display: flex;
+        flex-direction: column;
+        
+        max-width: 70%;
+        height: auto;
+        left: 0;
+    }
+
+    .container3 img {
+        width: 90%;
+    }
+
+    .container3 #imgArticle3 {
+        position: static;
+        width: 90%;
+        min-width: auto;
+        max-width: none;
+        margin: 20px auto;
+        top: 0;
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    .container4 img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .container4 #imgArticle4 {
+        position: static;
+        width: 90%;
+        min-width: auto;
+        max-width: none;
+        margin: 0 auto;
+        left: 0;
+        bottom: 0;
+    }
+
+    #imgArticle5 {
+        position: static;
+        width: 90%;
+        min-width: auto;
+        max-width: none;
+        margin: 20px auto;
+        left: 0;
+        top: 0;
+    }
+
+    /* Ajustes da seção 3 (grid) */
+    .secao3 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .caixa_de_artigo {
+        width: 100%;
+    }
+
+
+    .caixa_de_artigo img {
+        max-width: 90% !important;
+        min-width: auto !important;
+        padding: 10px !important;
+    }
+
+    /* Ajustes da seção 4 */
+    .secao4 {
+        padding: 15px;
+    }
+
+    .secao4 #tipo {
+        width: 30%;
+    }
+
+    .secao4 .cards {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .secao4 #card1,
+    .secao4 #card2 {
+        padding: 10px;
+    }
+
+    .secao4 #card1 #img_card1,
+    .secao4 #card2 #img_card2 {
+        width: 100%;
+    }
+
+    .secao4 #card1 h2,
+    .secao4 #card2 h2{
+        position: static;
+        width: 90%;
+        max-width: none;
+        margin: 0 auto 20px;
+    }
+
+    .secao4 .boxs {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .secao4 ul{
+        padding-left: 20px;
+    }
+
+    /* Ajustes da seção 5 */
+    .secao5 h2 {
+        font-size: 18px;
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+    /* Ajustes da seção 6 */
+    .secao6 {
+        gap: 50px;
+        padding: 15px;
+    }
+
+    .secao6 section ul {
+        padding-left: 25px;
+    }
+
+    .secao6 h3 {
+        position: static;
+        width: 90%;
+        margin: 20px auto 20px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .secao6 section {
+        padding: 15px;
+        height: auto;
+    }
+
+    .box_01 {
+        margin-bottom: 30px;
+    }
+
+    .box_01 img {
+        max-width: 100%;
+    }
+
+    .box_02 ul {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* Ajustes da seção 7 */
+    .secao7 {
+        padding: 15px;
+    }
+
+    .box_03 h2 {
+        width: 80%;
+    }
+
+    .box_03 div {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .box_03 img {
+        max-width: 90%;
+        min-width: auto;
+        margin-bottom: 15px;
+    }
+
+    .box_03 .textos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .textos article {
+        max-width: 90%;
+        min-width: auto;
+        height: auto;
+    }
+
+    /* Ajustes da seção 8 */
+    .secao8 {
+        padding: 15px;
+        gap: 50px;
+    }
+
+    .secao8 #container1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #caixa1 img {
+        min-width: auto;
+        max-width: 100%;
+    }
+
+    #caixa1 h2 {
+        position: static;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    #caixa2, #caixa3 {
+        padding: 15px;
+        width: 80%;
+    }
+
+    .secao8 #caixa3{
+        position: relative;
+        left: 18vw;
+        
+        /* border:  solid 1px red; */
+    }
+
+    #caixa2 article, #caixa3 article {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    /* Ajustes da seção 9 */
+    .secao9 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+        text-align: center;
+    }
+
+    .secao9 div li{
+        list-style: none;
+    }
+
+    .secao10 .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Media Query para dispositivos muito pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    header img {
+        width: 150px;
+    }
+
+    .hamburger {
+        top: 15px;
+    }
+
+    .container1 article h2 {
+        font-size: 20px;
+    }
+
+    .container1 article p {
+        font-size: 14px;
+    }
+
+    .secao5 h2 {
+        font-size: 16px;
+    }
+
+    .secao6 h2,
+    .box_03 h2,
+    #caixa1 h2 {
+        font-size: 18px;
+    }
+
+    .secao4 #card3 h2,
+    .secao6 h3 {
+        font-size: 16px;
+    }
+
+    .box_02 ul,
+    .textos article {
+        font-size: 14px;
+    }
+
+    /* Corrigir problemas de imagens em telas muito pequenas */
+    .secao3 .caixa_de_artigo img {
+        max-width: 100% !important;
+    }
+
+    /* Ajustes adicionais para melhorar a visualização em telas muito pequenas */
+    .secao4 #tipo {
+        width: 40%;
+    }
+
+    .secao4 #card3 {
+        padding: 10px;
+    }
+
+    .secao4 .boxs {
+        padding: 10px;
+    }
+
+    .secao4 .boxs h2 {
+        font-size: 16px;
+    }
+
+    .secao4 .boxs ul li {
+        font-size: 14px;
+    }
+}
+
+/* Correções para imagens com caminhos absolutos */
+@media screen and (max-width: 768px) {
+    .secao3 img[src^="/"],
+    .secao4 img[src^="/"],
+    .secao6 img[src^="/"],
+    .secao7 img[src^="/"],
+    .secao8 img[src^="/"] {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,1060 @@
+/* ========== CSS BASE (DESKTOP) ========== */
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.banner {
+    margin: 0px;
+    padding: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.text-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60VH;
+    width: 100%;
+    border-radius: 40px;
+    background-image: url('img_pedagogia/Image_fx_12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform 1.5s ease;
+}
+
+.text-banner:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+/* ========== HEADER ========== */
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 80px;
+    padding-right: 20px;
+    background-color: var(--cor-complementar);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+header img{
+    margin-top: 10px;
+    width: 300px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    margin-right: 10vw;
+}
+
+.nav-links-mobile, .menu-toggle{
+    display: none;
+}
+
+.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links-mobile img{
+    display: none;
+    width: 50px;
+}
+
+/* Estilos para o menu hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--cor-terciaria);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Animação do menu hambúrguer quando ativo */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    list-style: none;
+    gap: clamp(5%, 2vw, 30vw);
+}
+
+header #b1, #b2, #b3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 23px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;    
+}
+
+#b1{
+    background: linear-gradient(to right, var(--cor-secundaria), var(--cor-terciaria));
+}
+
+#b2{
+    background: var(--cor-terciaria);
+}
+
+#b3{
+    background: linear-gradient(to left, var(--cor-secundaria), var(--cor-terciaria));
+}
+
+header #b1:hover, #b2:hover, #b3:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 2px var(--cor-terciaria);
+}
+
+.nav-links #a1{
+    font-family: var(--fonte-botao);
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: var(--cor-complementar);
+    text-decoration: none;
+}
+
+/* ========== SEÇÕES PEDAGOGIA ========== */
+.pedagogia-parte1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+    height: 40vh;
+}
+
+.eclipse-autoestima {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('img_pedagogia/foto1.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.texto1 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.texto1 h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.texto1 p {
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+}
+
+.fundo-pedagogia {
+    width: 90%;
+    background-color: #728ea8;
+}
+
+.pedagogia-parte2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    background: #728ea8;
+    margin: 0px;
+}
+
+.texto2 {
+    background-color: #9180e08f;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 10px;
+    z-index: 2;
+    transform: translateX(18%);
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.9s ease;
+    cursor: grab;
+}
+
+.texto2:hover {
+    transform: translateX(15%) scale(1.1);
+}
+
+.imagem1,
+.saladeaula1 {
+    margin-top: 30px;
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15px;
+}
+
+.pedagogia-parte3 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto3 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.texto3 h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.texto3 p {
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+}
+
+.eclipse-autoestima2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('img_pedagogia/foto4.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/*PARTE PEDAGOGIA 2*/
+.fundo-pedagogia2{
+    background-color: rgba(0, 123, 255, 0.2);
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 90%;
+}
+
+.pedagogia-parte4{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row-reverse;
+}
+
+.texto4{
+    background-color: #476aacc2; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;    
+    border-radius: 10px;
+    transform: translatex(-70px);
+    cursor: grab;
+    transition: transform 0.9s ease;
+}
+
+.texto4:hover{
+    transform: translateX(-15%) scale(1.1);
+}
+
+.imagem2, .saladeaula2{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* SECTION BREAK 2*/
+.pedagogia-parte5 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto5 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.texto5 h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.texto5 p {
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+}
+
+.eclipse-autoestima3 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('img_pedagogia/foto5.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/* PARTE PEDAGOGIA 3 */
+.fundo-pedagogia3 {
+    width: 90%;
+    background-color: #728EA8;
+}
+
+.pedagogia-parte6 {
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 90%;
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto6 {
+    background-color: #9180e09a;
+    padding: 20px;
+    width: 400px;
+    height: 240px;
+    transform: translate(-10px, 180px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.9s ease;
+    cursor: grab;
+}
+
+.texto6:hover {
+    transform: translate(20px, 220px) translateX(1%) scale(1.1);
+}
+
+.abraco {
+    margin-top: 30px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    width: 40%;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.item {
+    padding: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    margin: 0px;
+    flex-direction: row-reverse;
+}
+
+.texto7 {
+    background-color: #9180e0a2;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transform: translate(400px, 20px);
+    transition: transform 0.9s ease;
+    cursor: grab;
+}
+
+.texto7:hover {
+    transform: translate(400px, 10px);
+}
+
+.maca {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    padding-left: 350px;
+    margin-bottom: 30px;
+}
+
+.titulomentall {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    height: 350px;
+    margin-top: 150px;
+    margin-bottom: -200px;
+}
+
+.titulo-mental {
+    background-color: #4f4367c0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 100px;
+    width: 500px;
+    margin: 40px;
+}
+
+.titulo-mental h2 {
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+.professor {
+    color: #b599d3;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.autoestima {
+    color: #d182b8;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.eclipse-autoestima4,
+.eclipse-autoestima5,
+.eclipse-autoestima6,
+.eclipse-autoestima7,
+.eclipse-autoestima8,
+.eclipse-autoestima9 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.eclipse-autoestima4 {
+    background-image: url('img_pedagogia/foto10.jpg');
+}
+
+.eclipse-autoestima5 {
+    background-image: url('img_pedagogia/foto9.jpg');
+    margin-top: 10px;
+}
+
+.eclipse-autoestima6 {
+    background-image: url('img_pedagogia/foto8.jpg');
+}
+
+.eclipse-autoestima7 {
+    background-image: url('img_pedagogia/foto12.jpg');
+}
+
+.eclipse-autoestima8 {
+    background-image: url('img_pedagogia/foto13.jpg');
+}
+
+.eclipse-autoestima9 {
+    background-image: url('img_pedagogia/foto11.jpg');
+}
+
+.mapamental {
+    background-color: #BCD9E8;
+    padding: 20px;
+    margin: 20px;
+    background-color: #728EA8;
+}
+
+.testeee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto8, .texto9, .texto10, .texto11, .texto12, .texto13, .texto14 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.texto8 p, .texto9 p, .texto10 p, .texto11 p, .texto12 p, .texto13 p, .texto14 p {
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+footer {
+    background-color: #082c3cb9;
+    color: white;
+    font-style: italic;
+    padding: 49px 20px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #082c3cb9;
+}
+
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    width: 90%;
+    transition: transform 1.5s ease;
+}
+
+.fundo1:hover, .fundo2:hover, .fundo3:hover, .fundo4:hover, .fundo5:hover, .fundo6:hover {
+    transform: scale(1.05);
+    transition: transform 0.7s ease;
+    background-color: #acd4e9;
+}
+
+.separacao {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* ========== TABLET (768px e abaixo) ========== */
+@media screen and (max-width: 768px) {
+    
+    /* BANNER */
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .text-banner {
+        height: 40vh;
+        border-radius: 20px;
+    }
+
+    .text-banner:hover {
+        transform: scale(1.05);
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    /* HEADER */
+    header {
+        width: 95%;
+        height: 70px;
+        padding-right: 10px;
+    }
+
+    header img {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    /* Mostrar menu hambúrguer */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Esconder menu desktop */
+    .nav-links {
+        display: none;
+    }
+
+    /* Mostrar menu mobile quando ativo */
+    .menu-toggle:checked ~ .nav-links-mobile {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: var(--cor-complementar);
+        width: 100%;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links-mobile img {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* SEÇÕES PEDAGOGIA */
+    .pedagogia-parte1,
+    .pedagogia-parte3,
+    .pedagogia-parte5 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .eclipse-autoestima,
+    .eclipse-autoestima2,
+    .eclipse-autoestima3,
+    .eclipse-autoestima4,
+    .eclipse-autoestima5,
+    .eclipse-autoestima6,
+    .eclipse-autoestima7,
+    .eclipse-autoestima8,
+    .eclipse-autoestima9 {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .texto1, .texto3, .texto5 {
+        padding: 20px;
+        text-align: center;
+        flex: none;
+    }
+
+    .texto1 h2, .texto3 h2, .texto5 h2 {
+        font-size: 28px;
+    }
+
+    .texto1 p, .texto3 p, .texto5 p {
+        font-size: 20px;
+    }
+
+    .fundo-pedagogia,
+    .fundo-pedagogia2,
+    .fundo-pedagogia3 {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .pedagogia-parte2,
+    .pedagogia-parte4 {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .texto2, .texto4 {
+        transform: none;
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+
+    .texto2:hover, .texto4:hover {
+        transform: scale(1.05);
+    }
+
+    .imagem1, .saladeaula1, .imagem2, .saladeaula2 {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .pedagogia-parte6 {
+        margin: 20px;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .texto6 {
+        transform: none;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+
+    .texto6:hover {
+        transform: scale(1.05);
+    }
+
+    .abraco {
+        width: 80%;
+        max-width: 300px;
+        padding: 0;
+        margin: 20px auto;
+    }
+
+    .item {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .texto7 {
+        transform: none;
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+
+    .texto7:hover {
+        transform: scale(1.05);
+    }
+
+    .maca {
+        width: 80%;
+        max-width: 300px;
+        padding: 0;
+        margin: 20px auto;
+    }
+
+    .titulomentall {
+        margin: 50px 20px;
+        height: auto;
+        align-items: center;
+    }
+
+    .titulo-mental {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .titulo-mental h2 {
+        font-size: 24px;
+    }
+
+    .professor, .autoestima {
+        font-size: 24px;
+    }
+
+    .mapamental {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .testeee {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .texto8, .texto9, .texto10, .texto11, .texto12, .texto13, .texto14 {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .texto8 p, .texto9 p, .texto10 p, .texto11 p, .texto12 p, .texto13 p, .texto14 p {
+        font-size: 20px;
+    }
+
+    .fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
+        width: 95%;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 30px 15px;
+    }
+}
+
+/* ========== MOBILE (480px e abaixo) ========== */
+@media screen and (max-width: 480px) {
+    
+    /* BANNER */
+    .banner {
+        padding: 30px 15px;
+    }
+
+    .text-banner {
+        height: 35vh;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        height: 60px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header img {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        top: 20px;
+        right: 15px;
+    }
+
+    .menu-toggle:checked ~ .nav-links-mobile {
+        top: 60px;
+        padding: 15px;
+    }
+
+    /* SEÇÕES PEDAGOGIA */
+    .pedagogia-parte1,
+    .pedagogia-parte3,
+    .pedagogia-parte5 {
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    .eclipse-autoestima,
+    .eclipse-autoestima2,
+    .eclipse-autoestima3,
+    .eclipse-autoestima4,
+    .eclipse-autoestima5,
+    .eclipse-autoestima6,
+    .eclipse-autoestima7,
+    .eclipse-autoestima8,
+    .eclipse-autoestima9 {
+        width: 150px;
+        height: 150px;
+        margin: 15px auto;
+    }
+
+    .texto1, .texto3, .texto5 {
+        padding: 15px;
+    }
+
+    .texto1 h2, .texto3 h2, .texto5 h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .texto1 p, .texto3 p, .texto5 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .fundo-pedagogia,
+    .fundo-pedagogia2,
+    .fundo-pedagogia3 {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .texto2, .texto4 {
+        width: 95%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .imagem1, .saladeaula1, .imagem2, .saladeaula2 {
+        width: 95%;
+        max-width: 320px;
+    }
+
+    .pedagogia-parte6 {
+        margin: 15px;
+        width: 95%;
+    }
+
+    .texto6 {
+        width: 95%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .abraco {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .item {
+        margin: 15px;
+    }
+
+    .texto7 {
+        width: 95%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .maca {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .titulomentall {
+        margin: 30px 15px;
+    }
+
+    .titulo-mental {
+        width: 95%;
+        max-width: 320px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .titulo-mental h2 {
+        font-size: 20px;
+    }
+
+    .professor, .autoestima {
+        font-size: 20px;
+    }
+
+    .mapamental {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .texto8, .texto9, .texto10, .texto11, .texto12, .texto13, .texto14 {
+        padding: 10px 15px;
+    }
+
+    .texto8 p, .texto9 p, .texto10 p, .texto11 p, .texto12 p, .texto13 p, .texto14 p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 25px 10px;
+    }
+}
+
+/* ========== MOBILE PEQUENO (320px e abaixo) ========== */
+@media screen and (max-width: 320px) {
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    .eclipse-autoestima,
+    .eclipse-autoestima2,
+    .eclipse-autoestima3,
+    .eclipse-autoestima4,
+    .eclipse-autoestima5,
+    .eclipse-autoestima6,
+    .eclipse-autoestima7,
+    .eclipse-autoestima8,
+    .eclipse-autoestima9 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .texto1 h2, .texto3 h2, .texto5 h2 {
+        font-size: 20px;
+    }
+
+    .texto1 p, .texto3 p, .texto5 p {
+        font-size: 14px;
+    }
+
+    .texto2, .texto4, .texto6, .texto7 {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .titulo-mental h2 {
+        font-size: 18px;
+    }
+
+    .professor, .autoestima {
+        font-size: 18px;
+    }
+
+    .texto8 p, .texto9 p, .texto10 p, .texto11 p, .texto12 p, .texto13 p, .texto14 p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px 8px;
+    }
+}
+
