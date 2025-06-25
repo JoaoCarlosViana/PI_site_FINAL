@@ -848,22 +848,21 @@ footer div{
 }
 
 
-/* MEDIA QUERY PARA TELAS MENORES (EX: CELULARES) */
 @media (max-width: 768px) {
-
-  .nav-links{
-        display: none;
+    /* Ajustes Globais e do Corpo */
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden; /* Garante que não haja rolagem horizontal */
     }
 
-    body{
-        width: 100vw;   
-    }
-    
+    /* Cabeçalho e Navegação */
     header {
         width: 100%;
         height: auto;
         padding: 10px;
         border-radius: 0;
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
     }
 
     header img {
@@ -874,14 +873,15 @@ footer div{
     .navbar {
         position: relative;
         padding: 0 10px;
+        width: 100%; /* Garante que a navbar ocupe a largura total */
+        justify-content: flex-end; /* Empurra o hambúrguer para a direita */
     }
 
-    /* Esconder links de navegação desktop */
     .nav-links {
-        display: none;
+        display: none; /* Oculta a navegação desktop */
     }
 
-    /* Exibir menu hambúrguer */
+    /* Menu Hambúrguer */
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -904,9 +904,9 @@ footer div{
         transition: all 0.3s ease;
     }
 
-    /* Estilo para o menu mobile quando ativado */
+    /* Lógica do Menu Mobile */
     .menu-toggle {
-        display: none;
+        display: none; /* Checkbox oculto */
     }
 
     .menu-toggle:checked ~ .nav-links-mobile {
@@ -925,7 +925,7 @@ footer div{
     }
 
     .nav-links-mobile {
-        display: none;
+        display: none; /* Oculto por padrão */
         align-items: center;
         gap: 20px;
         padding: 0;
@@ -956,107 +956,143 @@ footer div{
         margin: 0 auto;
     }
 
+    /* Seção do Banner */
+    .banner {
+        padding: 40px 10px;
+    }
 
+    .text-banner {
+        height: auto;
+        min-height: 300px;
+        padding: 20px;
+        background-size: contain; /* Ajusta a imagem de fundo para telas menores */
+    }
 
+    h1 {
+        font-size: 32px;
+    }
 
-  .banner {
-    padding: 40px 10px;
-  }
+    /* Seções de Quebra (autoestima-partX, mapa_mentalX) */
+    .autoestima-part1,
+    .autoestima-part2,
+    .mapa_mental1,
+    .mapa_mental2,
+    .mapa_mental3,
+    .mapa_mental4,
+    .mapa_mental5,
+    .mapa_mental6 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+        width: 100%; /* Garante largura total */
+        margin: 0; /* Remove margem */
+    }
 
-  .text-banner {
-    height: auto;
-    min-height: 300px;
-    padding: 20px;
-  }
+    .eclipse-autoestima,
+    .eclipse-autoestima2,
+    .eclipse-mapamental1,
+    .eclipse-mapamental2,
+    .eclipse-mapamental3,
+    .eclipse-mapamental4,
+    .eclipse-mapamental5,
+    .eclipse-mapamental6 {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
 
-  h1 {
-    font-size: 32px;
-  }
+    .text, .text2 {
+        padding: 0 10px;
+        text-align: center;
+        flex: none; /* Remove flex-grow */
+    }
 
-  .autoestima-part1,
-  .autoestima-part2,
-  .mapa_mental1,
-  .mapa_mental2,
-  .mapa_mental3,
-  .mapa_mental4,
-  .mapa_mental5,
-  .mapa_mental6 {
-    flex-direction: column;
-    height: auto;
-    padding: 30px 10px;
-  }
+    .text h2, .text2 h2 {
+        font-size: 28px;
+    }
 
-  .eclipse-autoestima,
-  .eclipse-autoestima2,
-  .eclipse-mapamental1,
-  .eclipse-mapamental2,
-  .eclipse-mapamental3,
-  .eclipse-mapamental4,
-  .eclipse-mapamental5,
-  .eclipse-mapamental6 {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 20px;
-  }
+    .text p, .text2 p {
+        font-size: 20px;
+    }
 
-  .text, .text2 {
-    padding: 0 10px;
-    text-align: center;
-  }
+    /* Contêineres de Imagem e Texto (container-imageX, container-rawX) */
+    #container-psicologia2,
+    #container-psicologia3,
+    #container-raws {
+        width: 100%; /* Garante largura total */
+        padding: 20px 10px; /* Ajusta o preenchimento */
+    }
 
-  .text h2, .text2 h2 {
-    font-size: 28px;
-  }
+    .container-image1,
+    .container-image2,
+    .container-raw1,
+    .container-raw2,
+    .container-raw3,
+    .container-raw4 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        min-height: auto; /* Ajusta a altura mínima */
+    }
 
-  .text p, .text2 p {
-    font-size: 20px;
-  }
+    .container-image1 img,
+    .container-image2 img,
+    .container-raw1 img,
+    .container-raw2 img,
+    .container-raw3 img {
+        width: 90%;
+        height: auto;
+        margin-top: 10px; /* Adiciona um pouco de margem */
+    }
 
-  .container-image1,
-  .container-image2,
-  .container-raw1,
-  .container-raw2,
-  .container-raw3,
-  .container-raw4 {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-  }
+    .caixa-texto,
+    .caixa-texto2,
+    .raw-text1,
+    .raw-text2,
+    .raw-text3,
+    .raw-text4 {
+        width: 90%;
+        transform: none; /* Remove transformações */
+        margin-top: 20px; /* Adiciona margem para espaçamento */
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    }
 
-  .container-image1 img,
-  .container-image2 img,
-  .container-raw1 img,
-  .container-raw2 img,
-  .container-raw3 img {
-    width: 90%;
-    height: auto;
-  }
+    /* Seção Pilares */
+    #pilares {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Ajusta o espaçamento */
+    }
 
-  .caixa-texto,
-  .caixa-texto2,
-  .raw-text1,
-  .raw-text2,
-  .raw-text3,
-  .raw-text4 {
-    width: 90%;
-    transform: none;
-  }
+    .titulo-pilares {
+        font-size: 28px;
+    }
 
-  #pilares {
-    flex-direction: column;
-    align-items: center;
-  }
+    .quadrados1,
+    .quadrados2,
+    .quadrados3 {
+        max-width: 90%;
+        min-width: unset; /* Remove a restrição de largura mínima */
+        font-size: 16px;
+        padding: 15px; /* Ajusta o preenchimento */
+    }
 
-  .titulo-pilares {
-    font-size: 28px;
-  }
+    /* Rodapé */
+    footer {
+        width: 100vw;
+        margin-top: 50px; /* Ajusta a margem */
+    }
 
-  .quadrados1,
-  .quadrados2,
-  .quadrados3 {
-    max-width: 90%;
-    font-size: 16px;
-  }
+    footer div {
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+        padding: 10px; /* Adiciona preenchimento */
+    }
 
+    /* Ajustes específicos para seções raw para garantir empilhamento correto */
+    .container-raw1, .container-raw3 {
+        flex-direction: column; /* Garante direção de coluna */
+    }
+    .container-raw2, .container-raw4 {
+        flex-direction: column; /* Garante direção de coluna */
+    }
 }
-
